@@ -1,6 +1,7 @@
 Require Export GeoCoq.Tarski_dev.Definitions.
 Require Export GeoCoq.Tactics.finish.
 
+(* Ltac is Coq's DSL for proof search *)
 Ltac prolong A B x C D :=
  assert (sg:= segment_construction A B C D);
  ex_and sg x.
